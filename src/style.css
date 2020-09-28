@@ -1,6 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    background: relative;
     background-color: #FCE54D;
-    position: relative;
 }
 
 .nose {
@@ -41,7 +53,7 @@ body {
 
 .lefteye-white,
 .righteye-white {
-    width: 25px;
+    width: 30px;
     height: 25px;
     background-color: white;
     border-radius: 50%;
@@ -93,7 +105,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 240px;
+    top: 239px;
     overflow: hidden;
 }
 
@@ -148,4 +160,39 @@ body {
     transform: translateX(-100%) rotate(160deg);
     background-color: rgb(252, 229, 77);
     z-index: 1;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 550px;
+    margin-left: -60px;
+    border-radius: 30px;
+    background: rgb(221, 80, 75);
+    background: linear-gradient(90deg, rgba(221, 80, 75, 1) 45%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 1) 55%, rgba(255, 255, 255, 1) 55%);
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+}
+
+.circle-2 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-2::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
 }
