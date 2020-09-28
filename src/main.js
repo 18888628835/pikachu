@@ -50,7 +50,8 @@ window.onload = () => {
         left: 50%;
         top: 160px;
         background-color: rgb(46, 46, 46);
-        transform: translateX(-150px);
+        margin-left: -150px;
+        animation: closeeye 3s ease infinite;
     }
     
     .lefteye-white,
@@ -73,10 +74,54 @@ window.onload = () => {
         left: 50%;
         top: 160px;
         background-color: black;
-        transform: translateX(92px);
+        margin-left: 92px;
         background-color: rgb(46, 46, 46);
+        animation: closeeye 3s ease infinite;
     }
+    @keyframes closeeye {
+        0% {
+            transform: rotateX(89deg);
+        }
     
+        10% {
+            transform: rotateX(0deg);
+        }
+    
+        20% {
+            transform: rotateX(0deg);
+        }
+    
+        30% {
+            transform: rotateX(0deg);
+        }
+    
+        40% {
+            transform: rotateX(0deg);
+        }
+    
+        50% {
+            transform: rotateX(0deg);
+        }
+    
+        60% {
+            transform: rotateX(0deg);
+        }
+    
+        70% {
+            transform: rotateX(0deg);
+        }
+    
+        80% {
+            transform: rotateX(0deg);
+        }
+        90% {
+            transform: rotateX(0deg);
+        }
+        100% {
+            transform: rotateX(89deg);
+        }
+    }
+
     .leftface {
         width: 80px;
         height: 80px;
@@ -164,6 +209,7 @@ window.onload = () => {
         z-index: 1;
     }
     
+    
     .circle {
         width: 120px;
         height: 120px;
@@ -197,8 +243,7 @@ window.onload = () => {
         height: 20px;
         background-color: white;
         border-radius: 50%;
-    }
-    `
+    }`
 
     let style = document.createElement('style')
     document.head.append(style)
@@ -218,7 +263,7 @@ window.onload = () => {
         } else {
             setTimeout(() => {
                 write()
-            }, 5)
+            }, 2)
         }
         n++
     }

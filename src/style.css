@@ -48,7 +48,8 @@ body {
     left: 50%;
     top: 160px;
     background-color: rgb(46, 46, 46);
-    transform: translateX(-150px);
+    margin-left: -150px;
+    animation: closeeye 3s ease infinite;
 }
 
 .lefteye-white,
@@ -71,8 +72,55 @@ body {
     left: 50%;
     top: 160px;
     background-color: black;
-    transform: translateX(92px);
+    margin-left: 92px;
     background-color: rgb(46, 46, 46);
+    animation: closeeye 3s ease infinite;
+}
+
+@keyframes closeeye {
+    0% {
+        transform: rotateX(89deg);
+    }
+
+    10% {
+        transform: rotateX(0deg);
+    }
+
+    20% {
+        transform: rotateX(0deg);
+    }
+
+    30% {
+        transform: rotateX(0deg);
+    }
+
+    40% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(0deg);
+    }
+
+    60% {
+        transform: rotateX(0deg);
+    }
+
+    70% {
+        transform: rotateX(0deg);
+    }
+
+    80% {
+        transform: rotateX(0deg);
+    }
+
+    90% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(89deg);
+    }
 }
 
 .leftface {
@@ -161,6 +209,7 @@ body {
     background-color: rgb(252, 229, 77);
     z-index: 1;
 }
+
 
 .circle {
     width: 120px;
